@@ -72,4 +72,4 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
 
 print(exchangeable_value(127.25, 1.20, 10, 20))
 
-exchangeable_value(127.25, 1.20, 10, 5)
+print(exchangeable_value(127.25, 1.20, 10, 5))
