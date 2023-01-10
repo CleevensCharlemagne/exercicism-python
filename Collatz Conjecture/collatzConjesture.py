@@ -1,13 +1,18 @@
-def collatzconjesture(n):
-    steps = 0
+def steps(number):
+    n_steps = 0
+    n = number
+    if (n <= 0):
+        raise ValueError('Only positive integers are allowed')
+
     while (n > 1):
-        if(n % 2 == 0):
+        if (n % 2 == 0):
             n = n / 2
-            steps += 1
+            n_steps += 1
             print(n)
         else:
             n = (3 * n) + 1
-            steps += 1
+            n_steps += 1
             print(n)
-    print(steps)
-collatzconjesture(15)
+    return (n_steps)
+
+print(steps(7))
