@@ -34,7 +34,13 @@ def clean_up_spacing(sentence):
     :return: str - a sentence that has been cleaned of leading and trailing space characters.
     """
 
-    pass
+    str = sentence
+    if(str[0] == ' '):
+        str = str[1:]
+    if(str[-1] == ' '):
+        str = str[:-1]
+
+    return str
 
 
 def replace_word_choice(sentence, old_word, new_word):
