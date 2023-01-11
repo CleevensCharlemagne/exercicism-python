@@ -5,4 +5,6 @@ def capitalize_title(title):
     :return: str - title string in title case (first letters capitalized).
     """
 
+    output = ''
+    arr = title.split(" ")
     return title.capitalize()
