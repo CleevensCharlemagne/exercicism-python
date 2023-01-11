@@ -34,8 +34,25 @@ def higher_card(card_one, card_two):
     2.  'A' (ace card) = 1
     3.  '2' - '10' = numerical value.
     """
+    card_1 = card_one
+    card_2 = card_two
+    faceCards = {'A': 1, 'J' : 10, 'Q' : 10, 'K' : 10}
+    if card_one in faceCards.keys():
+        card_one = faceCards[card_one]
+    else:
+        card_one = int(card_one)
 
-    pass
+    if card_two in faceCards.keys():
+        card_two = faceCards[card_two]
+    else:
+        card_two = int(card_two)
+
+    if card_one > card_two:
+        return card_1
+    elif card_one < card_two:
+        return card_2
+    else:
+        return card_1, card_2
 
 
 def value_of_ace(card_one, card_two):
