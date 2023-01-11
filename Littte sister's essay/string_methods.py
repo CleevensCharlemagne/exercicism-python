@@ -35,10 +35,12 @@ def clean_up_spacing(sentence):
     """
 
     str = sentence
-    if(str[0] == ' '):
-        str = str[1:]
-    if(str[-1] == ' '):
-        str = str[:-1]
+
+    while str[0] == ' ':
+      str = str[1:]
+
+    while str[-1] == ' ':
+      str = str[:-2]
 
     return str
 
