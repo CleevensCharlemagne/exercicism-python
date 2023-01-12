@@ -83,4 +83,7 @@ def sorted_names(queue):
     :return: list - copy of the queue in alphabetical order.
     """
 
-    pass
+    arr = queue
+    arr.sort()
+
+    return arr
