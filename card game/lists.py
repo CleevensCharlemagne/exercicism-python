@@ -73,7 +73,19 @@ def average_even_is_average_odd(hand):
     :return: bool - are even and odd averages equal?
     """
 
-    pass
+    even = 0
+    evenSum = 0
+    odd = 0
+    oddSum = 0
+    for i in range(len(hand)):
+        if i % 2 == 0:
+            even += 1
+            evenSum += hand[i]
+        else:
+            odd += 1
+            oddSum += hand[i]
+
+    return (evenSum/even == oddSum/odd)
 
 
 def maybe_double_last(hand):
