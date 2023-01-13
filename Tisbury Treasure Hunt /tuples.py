@@ -40,7 +40,7 @@ def create_record(azara_record, rui_record):
 
 
 def clean_up(combined_record_group):
-    """Clean up a combined record group into a multi-line string of single records.
+    """ Clean up a combined record group into a multi-line string of single records.
 
     :param combined_record_group: tuple - everything from both participants.
     :return: str - everything "cleaned", excess coordinates and information are removed.
