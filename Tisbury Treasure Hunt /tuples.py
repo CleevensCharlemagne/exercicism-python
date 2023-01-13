@@ -11,7 +11,7 @@ def get_coordinate(record):
 
 
 def convert_coordinate(coordinate):
-    """Split the given coordinate into tuple containing its individual components.
+    """ Split the given coordinate into tuple containing its individual components.
 
     :param coordinate: str - a string map coordinate
     :return: tuple - the string coordinate split into its individual components.
