@@ -99,4 +99,8 @@ def perfect_score(student_info):
     :return: list - first `[<student name>, 100]` or `[]` if no student score of 100 is found.
     """
 
-    pass
+    for entry in student_info:
+        if(entry[1] == 100):
+            return entry
+
+    return []
