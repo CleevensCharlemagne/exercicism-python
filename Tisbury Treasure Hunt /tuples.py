@@ -18,7 +18,7 @@ def convert_coordinate(coordinate):
     :return: tuple - the string coordinate split into its individual components.
     """
 
-    pass
+    return (coordinate[0], coordinate[1])
 
 
 def compare_records(azara_record, rui_record):
@@ -29,7 +29,12 @@ def compare_records(azara_record, rui_record):
     :return: bool - do the coordinates match?
     """
 
-    pass
+    output = False
+
+    if(azara_record[1][0], azara_record[1][1]) == rui_record[1]:
+        output = True
+
+    return output
 
 
 def create_record(azara_record, rui_record):
