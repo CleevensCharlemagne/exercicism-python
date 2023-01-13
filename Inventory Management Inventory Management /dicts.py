@@ -62,8 +62,10 @@ def remove_item(inventory, item):
     :param item: str - item to remove from the inventory.
     :return: dict - updated inventory with item removed. Current inventory if item does not match.
     """
+    if item in inventory.keys():
+        del inventory[item]
 
-    pass
+    return inventory
 
 
 def list_inventory(inventory):
