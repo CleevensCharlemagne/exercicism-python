@@ -28,7 +28,6 @@ def compare_records(azara_record, rui_record):
     :param rui_record: tuple - a (location, tuple(coordinate_1, coordinate_2), quadrant) trio.
     :return: bool - do the coordinates match?
     """
-
     pass
 
 
