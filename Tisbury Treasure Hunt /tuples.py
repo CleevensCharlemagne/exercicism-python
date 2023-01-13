@@ -39,7 +39,6 @@ def create_record(azara_record, rui_record):
     :param rui_record: tuple - a (location, coordinate, quadrant) trio.
     :return: tuple or str - the combined record (if compatible), or the string "not a match" (if incompatible).
     """
-
     pass
 
 
