@@ -25,7 +25,20 @@ def add_items(inventory, items):
     :return: dict - the inventory updated with the new items.
     """
 
-    pass
+    newItems = []
+
+    for e in items:
+        if e in inventory.keys():
+            inventory[e] += 1
+        else:
+            inventory[e] = 0
+            newItems.append(e)
+
+    for e in newItems:
+        inventory[e] += 1
+
+    return inventory
+
 
 
 def decrement_items(inventory, items):
