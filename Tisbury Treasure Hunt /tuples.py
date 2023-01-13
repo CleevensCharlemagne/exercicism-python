@@ -52,5 +52,4 @@ def clean_up(combined_record_group):
 
     (see HINTS.md for an example).
     """
-
     pass
