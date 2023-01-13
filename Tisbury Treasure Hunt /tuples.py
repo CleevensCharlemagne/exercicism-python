@@ -30,7 +30,7 @@ def compare_records(azara_record, rui_record):
 
 
 def create_record(azara_record, rui_record):
-    """Combine the two record types (if possible) and create a combined record group.
+    """ Combine the two record types (if possible) and create a combined record group.
 
     :param azara_record: tuple - a (treasure, coordinate) pair.
     :param rui_record: tuple - a (location, coordinate, quadrant) trio.
