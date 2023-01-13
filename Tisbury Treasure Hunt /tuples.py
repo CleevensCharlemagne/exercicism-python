@@ -20,7 +20,7 @@ def convert_coordinate(coordinate):
 
 
 def compare_records(azara_record, rui_record):
-    """ Compare two record types and determine if their coordinates match.
+    """Compare two record types and determine if their coordinates match.
 
     :param azara_record: tuple - a (treasure, coordinate) pair.
     :param rui_record: tuple - a (location, tuple(coordinate_1, coordinate_2), quadrant) trio.
