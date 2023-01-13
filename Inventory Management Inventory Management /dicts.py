@@ -75,4 +75,9 @@ def list_inventory(inventory):
     :return: list of tuples - list of key, value pairs from the inventory dictionary.
     """
 
-    pass
+    arr = []
+    for item in inventory.keys():
+        if inventory[item] > 0:
+            arr.append((item, inventory[item]))
+
+    return arr
