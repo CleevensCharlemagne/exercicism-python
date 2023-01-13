@@ -2,13 +2,13 @@
 
 
 # TODO: define the 'get_list_of_wagons' function
-def get_list_of_wagons():
+def get_list_of_wagons(*args):
     """Return a list of wagons.
 
     :param: arbitrary number of wagons.
     :return: list - list of wagons.
     """
-    pass
+    return list(args)
 
 
 # TODO: define the 'fixListOfWagons()' function
