@@ -39,7 +39,12 @@ def above_threshold(student_scores, threshold):
     :return: list - of integer scores that are at or above the "best" threshold.
     """
 
-    pass
+    passed = []
+    for score in student_scores:
+        if score >= threshold:
+            passed.append(score)
+
+    return passed
 
 
 def letter_grades(highest):
