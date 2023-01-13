@@ -2,7 +2,7 @@
 
 
 def get_coordinate(record):
-    """ Return coordinate value from a tuple containing the treasure name, and treasure coordinate.
+    """Return coordinate value from a tuple containing the treasure name, and treasure coordinate.
 
     :param record: tuple - with a (treasure, coordinate) pair.
     :return: str - the extracted map coordinate.
