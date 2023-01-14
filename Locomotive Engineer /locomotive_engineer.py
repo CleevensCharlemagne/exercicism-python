@@ -46,7 +46,7 @@ def extend_route_information(route, more_route_information):
     :param more_route_information: dict -  extra route information.
     :return: dict - extended route information.
     """
-    pass
+    return route | more_route_information
 
 
 # TODO: define the 'fix_wagon_depot()' function
