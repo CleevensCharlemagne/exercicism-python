@@ -64,7 +64,14 @@ def categorize_dish(dish_name, dish_ingredients):
 
     """
 
-    pass
+    keys = 'VEGAN', 'VEGETARIAN', 'PALEO', 'KETO', 'OMNIVORE'
+    values = VEGAN, VEGETARIAN, PALEO, KETO, OMNIVORE
+
+    for key, value in zip(keys, values):
+        if set(dish_ingredients).issubset(value):
+            return f'{dish_name}: {key}'
+
+
 
 
 def tag_special_ingredients(dish):
