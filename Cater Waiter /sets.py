@@ -21,7 +21,11 @@ def clean_ingredients(dish_name, dish_ingredients):
     followed by the de-duped `set` of ingredients as the second item.
     """
 
-    pass
+    myset = set()
+    for e in dish_ingredients:
+        myset.add(e)
+
+    return (dish_name, myset)
 
 
 def check_drinks(drink_name, drink_ingredients):
