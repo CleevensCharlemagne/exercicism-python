@@ -40,7 +40,15 @@ def check_drinks(drink_name, drink_ingredients):
 
     """
 
-    pass
+    alcohol = False
+    for e in drink_ingredients:
+        if e in ALCOHOLS:
+            alcohol = True
+
+    if alcohol:
+        return f'{drink_name} Cocktail'
+
+    return f'{drink_name} Mocktail'
 
 
 def categorize_dish(dish_name, dish_ingredients):
