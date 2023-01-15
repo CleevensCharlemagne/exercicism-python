@@ -85,7 +85,12 @@ def tag_special_ingredients(dish):
     SPECIAL_INGREDIENTS constant imported from `sets_categories_data.py`.
     """
 
-    pass
+    special = set()
+    for e in dish[1]:
+        if e in SPECIAL_INGREDIENTS:
+            special.add(e)
+    return (dish[0], special)
+
 
 
 def compile_ingredients(dishes):
