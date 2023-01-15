@@ -102,7 +102,11 @@ def compile_ingredients(dishes):
     This function should return a `set` of all ingredients from all listed dishes.
     """
 
-    pass
+    output = set()
+    for el in dishes:
+        for e in el:
+            output.add(e)
+    return output
 
 
 def separate_appetizers(dishes, appetizers):
