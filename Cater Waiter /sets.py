@@ -120,7 +120,13 @@ def separate_appetizers(dishes, appetizers):
     Either list could contain duplicates and may require de-duping.
     """
 
-    pass
+    output = set()
+
+    for d in dishes:
+        if d not in appetizers:
+            output.add(d)
+
+    return output
 
 
 def singleton_ingredients(dishes, intersection):
