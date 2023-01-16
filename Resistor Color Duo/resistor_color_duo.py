@@ -9,5 +9,8 @@ def value(colors):
     for color in colors:
         output += str(color_code(color))
 
+    if len(output) > 2:
+        output = output[:2]
+
     return int(output)
 
