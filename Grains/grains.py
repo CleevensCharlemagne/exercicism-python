@@ -15,4 +15,7 @@ def square(number):
 
 
 def total():
-    return sum(chess)
+    sum = 0
+    for grain in chess:
+        sum += grain
+    return sum
