@@ -15,7 +15,5 @@ def square(number):
 
 
 def total():
-    sum = 0
-    for grain in chess:
-        sum += grain
+    sum = (2 ** 64) - 1
     return sum
