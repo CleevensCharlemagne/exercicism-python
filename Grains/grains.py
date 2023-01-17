@@ -15,4 +15,4 @@ def square(number):
 
 
 def total():
-    pass
+    return sum(chess)
