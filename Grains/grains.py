@@ -1,5 +1,7 @@
+chess = []
+
+
 def square(number):
-    chess = []
     if number >= 1 and number <= 64:
         chess.append(1)
         i = 1
@@ -9,8 +11,8 @@ def square(number):
 
     else:
         raise ValueError("square must be between 1 and 64")
+    return chess[number - 1]
 
-    return chess
 
-
-print(square(6))
+def total():
+    pass
