@@ -1,6 +1,6 @@
 import re
 def response(hey_bob):
-    //remove mulitple spaces
+    #remove mulitple spaces
     hey_bob = re.sub(' +', ' ',hey_bob)
     if hey_bob[-1] == ' ':
         hey_bob = hey_bob[:-1]
