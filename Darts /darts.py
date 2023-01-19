@@ -3,7 +3,7 @@ def score(x, y):
     if point < 0:
         point *= -1
 
-    if point > 10:
+    if point > 10 or point < 1:
         return 0
     elif point > 5 and point <= 10:
         return 1
