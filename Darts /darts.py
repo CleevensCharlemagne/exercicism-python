@@ -1,3 +1,6 @@
+from math import sqrt
+
+
 def score(x, y):
     point = sqrt(x ** 2 + y ** 2)
 
