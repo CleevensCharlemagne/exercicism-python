@@ -15,3 +15,5 @@ def convert(number):
 
     if len(output) == 0:
         output = str(number)
+
+    return output
