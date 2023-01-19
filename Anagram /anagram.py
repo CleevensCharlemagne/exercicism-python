@@ -1,12 +1,14 @@
 def find_anagrams(word, candidates):
     anagram = set()
+    str = word.lower()
+    arr = candidates
 
-    for candidate in candidates:
+    for candidate in arr:
         okay = True
 
-        if candidate != word:
-            for car in candidate:
-                if (car in word) and (word.count(car) == candidate.count(car)):
+        if candidate.lower() != str:
+            for car in candidate.lower():
+                if (car in str) and (str.count(car) == candidate.lower().count(car)):
                     continue
                 else:
                         okay = False
@@ -17,7 +19,6 @@ def find_anagrams(word, candidates):
     return list(anagram)
 
 
-candidates = ["enlists", "google", "inlets", "banana"]
-expected = ["inlets"]
-
-print(find_anagrams("listen", candidates))
+candidates = ["Eons", "ONES"]
+expected = ["Eons", "ONES"]
+print(find_anagrams("nose", candidates))
