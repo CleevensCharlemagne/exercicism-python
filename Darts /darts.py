@@ -1,14 +1,12 @@
 def score(x, y):
-    point = x + y
-    if point < 0:
-        point *= -1
+    point = sqrt(x ** 2 + y ** 2)
 
-    if point > 10 or point < 0 or x == (y * (-1)):
+    if point > 10:
         return 0
-    elif point > 5 and point <= 10:
+    elif point > 5:
         return 1
-    elif point >= 2 and point <= 5:
+    elif point > 1:
         return 5
-    elif 1 <= point < 2 or x == y:
+    else:
         return 10
 
