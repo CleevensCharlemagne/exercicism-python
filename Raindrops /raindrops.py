@@ -1,7 +1,7 @@
 def convert(number):
     pling = 'Pling'
     plang = 'Plang'
-    Plong = 'Plong'
+    plong = 'Plong'
     output = ''
 
     if number % 3 == 0:
@@ -13,4 +13,5 @@ def convert(number):
     if number % 7 == 0:
         output += plong
 
-    if len()
+    if len(output) == 0:
+        output = str(number)
