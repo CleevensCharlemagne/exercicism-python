@@ -5,7 +5,7 @@ def find_anagrams(word, candidates):
         okay = True
 
         if candidate != word:
-            for car in candidate
+            for car in candidate:
                 if car not in word:
                     okay = False
                     break
