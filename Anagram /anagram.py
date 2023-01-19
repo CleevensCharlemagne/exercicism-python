@@ -13,8 +13,8 @@ def find_anagrams(word, candidates):
                 else:
                         okay = False
                         break
-        if okay:
-            anagram.add(candidate)
+            if okay:
+                anagram.add(candidate)
 
     return list(anagram)
 
