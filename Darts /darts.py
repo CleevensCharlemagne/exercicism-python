@@ -1,7 +1,7 @@
 def score(x, y):
     point = x + y
     if point < 0:
-        point *= 0
+        point *= -1
 
     if point > 10:
         return 0
