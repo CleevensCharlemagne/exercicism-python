@@ -9,6 +9,7 @@ def find_anagrams(word, candidates):
                 if car not in word:
                     okay = False
                     break
-        anagram.add(candidate)
+        if okay:
+            anagram.add(candidate)
 
     return list(anagram)
