@@ -9,3 +9,8 @@ def convert(number):
 
     if number % 5 == 0:
         output += plang
+
+    if number % 7 == 0:
+        output += plong
+
+    if len()
