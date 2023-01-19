@@ -1,2 +1,2 @@
 def convert(number):
-    pass
+    pling = 'Pling'
