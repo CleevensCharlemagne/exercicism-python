@@ -8,3 +8,11 @@ def classify(number):
         raise ValueError("Classification is only possible for positive integers.")
     else:
         pass
+
+# This function computes the factor of the argument passed
+def print_factors(number):
+    factors = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            factors.append(i)
+    return factors
