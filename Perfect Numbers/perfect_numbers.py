@@ -6,6 +6,12 @@ def n_factors(number):
             factors.append(i)
     return factors
 
+def sum_factors(factors):
+    sum = 0
+    for factor in factors:
+        sum += factor
+    return sum
+
 def classify(number):
     """ A perfect number equals the sum of its positive divisors.
 
