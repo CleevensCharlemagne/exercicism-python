@@ -4,14 +4,12 @@ def n_factors(number):
     for i in range(1, number):
         if number % i == 0:
             factors.append(i)
-    print('factors:', factors)
     return factors
 
 def sum_factors(factors):
     sum = 0
     for factor in factors:
         sum += factor
-    print('sum_factors', sum)
     return sum
 
 def classify(number):
@@ -25,12 +23,10 @@ def classify(number):
     else:
         factors = n_factors(number)
         sumFactors = sum_factors(factors)
-        if number > sumFactors:
+        if number < sumFactors:
             return 'abundant'
-        elif number < sumFactors:
+        elif number > sumFactors:
             return 'deficient'
         else:
             return 'perfect'
-
-classify(6)
 
