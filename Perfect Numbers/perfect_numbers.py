@@ -25,7 +25,7 @@ def classify(number):
         sumFactors = sum_factors(factors)
         if number > sumFactors:
             return 'abundant'
-        elif number < factors:
+        elif number < sumFactors:
             return 'deficient'
         else:
             return 'perfect'
