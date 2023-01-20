@@ -1,3 +1,11 @@
+# This function computes the factor of the argument passed
+def n_factors(number):
+    factors = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            factors.append(i)
+    return factors
+
 def classify(number):
     """ A perfect number equals the sum of its positive divisors.
 
@@ -7,12 +15,11 @@ def classify(number):
     if number < 0:
         raise ValueError("Classification is only possible for positive integers.")
     else:
-        pass
+        factors = n_factors(number)
+        if number > factors:
+            return None
+        elif number < factors:
+            return None
+        else:
+            return None
 
-# This function computes the factor of the argument passed
-def print_factors(number):
-    factors = []
-    for i in range(1, number + 1):
-        if number % i == 0:
-            factors.append(i)
-    return factors
