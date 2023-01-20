@@ -22,10 +22,11 @@ def classify(number):
         raise ValueError("Classification is only possible for positive integers.")
     else:
         factors = n_factors(number)
-        if number > factors:
-            return None
+        sumFactors = sum_factors(factors)
+        if number > sumFactors:
+            return 'abundant'
         elif number < factors:
-            return None
+            return 'deficient'
         else:
-            return None
+            return 'perfect'
 
