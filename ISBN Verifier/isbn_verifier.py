@@ -3,7 +3,7 @@ def is_valid(isbn):
     test = 0
     is_valid = False
 
-    #Add valid caracters to a list as integer
+    # Add valid caracters to a list as integer
     for n in isbn:
         if n.isdigit():
             isbn_digits.append(int(n))
@@ -13,11 +13,12 @@ def is_valid(isbn):
             else:
                 return False
 
-    #check if the list has 10 caracters
+    # check if the list has 10 caracters
     if len(isbn_digits) != 10:
         return False
 
-    #Applying the given formula:
+    # Applying the given formula:
+    # (d₁ * 10 + d₂ * 9 + d₃ * 8 + d₄ * 7 + d₅ * 6 + d₆ * 5 + d₇ * 4 + d₈ * 3 + d₉ * 2 + d₁₀ * 1) mod 11 == 0
     b = 10
     for i in range(len(isbn_digits)):
         test += isbn_digits[i]*b
