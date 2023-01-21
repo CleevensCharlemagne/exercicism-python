@@ -11,11 +11,11 @@ def is_valid(isbn):
     b = 10
     for i in range(len(isbn_digits)):
         test += isbn_digits[i]*b
-
+        b -= 1
 
     if test % 11 == 0:
         is_valid = True
 
     return is_valid
 
-print(is_valid("3-598-21507-X"))
+print(is_valid("3-598-21508-8"))
