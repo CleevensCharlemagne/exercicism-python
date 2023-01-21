@@ -2,6 +2,10 @@ def is_valid(isbn):
     isbn_digits = list()
     test = 0
     is_valid = False
+
+    if len(isbn_digits) != 10:
+        return False
+
     for n in isbn:
         if n.isdigit():
             isbn_digits.append(int(n))
