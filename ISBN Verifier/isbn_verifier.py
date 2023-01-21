@@ -7,7 +7,7 @@ def is_valid(isbn):
         if n.isdigit():
             isbn_digits.append(int(n))
         elif n.isalpha():
-            if n == 'X':
+            if n == 'X' and (isbn_digits.index(n) == 0 or isbn_digits.index(n) == 9):
                 isbn_digits.append(10)
             else:
                 return False
