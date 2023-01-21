@@ -13,6 +13,7 @@ def is_valid(isbn):
             else:
                 return False
 
+    #check if the list has 10 caracters
     if len(isbn_digits) != 10:
         return False
 
