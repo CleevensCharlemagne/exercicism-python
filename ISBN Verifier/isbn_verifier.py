@@ -3,6 +3,7 @@ def is_valid(isbn):
     test = 0
     is_valid = False
 
+    #Add valid caracters to a list as integer
     for n in isbn:
         if n.isdigit():
             isbn_digits.append(int(n))
