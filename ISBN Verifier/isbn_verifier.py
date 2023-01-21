@@ -5,8 +5,11 @@ def is_valid(isbn):
     for n in isbn:
         if n.isdigit():
             isbn_digits.append(int(n))
-        elif n == 'X':
-            isbn_digits.append(10)
+        elif n.isalpha():
+            if n == '10':
+                isbn_digits.append(10)
+            else:
+                return False
 
     b = 10
     for i in range(len(isbn_digits)):
