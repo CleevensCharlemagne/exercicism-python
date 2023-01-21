@@ -17,6 +17,7 @@ def is_valid(isbn):
     if len(isbn_digits) != 10:
         return False
 
+    #Applying the given formula:
     b = 10
     for i in range(len(isbn_digits)):
         test += isbn_digits[i]*b
