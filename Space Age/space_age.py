@@ -32,3 +32,6 @@ class SpaceAge:
 
     def on_uranus(self):
         return round(self.seconds / self.uranusYears, 2)
+
+    def on_neptune(self):
+        return round(self.seconds / self.neptuneYears, 2)
