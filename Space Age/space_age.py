@@ -17,3 +17,6 @@ class SpaceAge:
 
     def on_mercury(self):
         return round(self.seconds / self.mercuryYears, 2)
+
+    def on_venus(self):
+        return round(self.seconds / self.venusYears, 2)
