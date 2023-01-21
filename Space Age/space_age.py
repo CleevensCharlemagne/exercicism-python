@@ -26,3 +26,6 @@ class SpaceAge:
 
     def on_jupiter(self):
         return round(self.seconds / self.jupiterYears, 2)
+
+    def on_saturn(self):
+        return round(self.seconds / self.saturnYears, 2)
