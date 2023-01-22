@@ -1,2 +1,7 @@
 def answer(question):
-    pass
+    words = question.split(" ")
+
+    if words[0] == 'what' and words[1] == 'is':
+        pass
+    else:
+        raise ValueError("syntax error")
