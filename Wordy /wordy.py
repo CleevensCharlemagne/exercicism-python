@@ -1,6 +1,7 @@
 def answer(question):
     words = question.split(" ")
 
+    #Removing the question mark
     if '?' in words[-1]:
         words[-1] = words[-1][:-1]
 
@@ -8,6 +9,8 @@ def answer(question):
         if len(words) == 3:
             if words[-1].isdigit():
                 return int(words[-1])
+
+
     else:
         raise ValueError("syntax error")
 
