@@ -1,6 +1,7 @@
 def commands(binary_str):
     # the message to dispay
     msg = []
+    # The secret mesaages
     secret = ['jump', 'close your eyes', 'double blink', 'wink']
 
     # Adding the appropriate secret message
