@@ -1,5 +1,4 @@
 def commands(binary_str):
-    pass
+    msg = []
+    secret = ['close your eyes', 'double blink', 'wink']
 
-def decimalToBinary(n):
-    return "{0:b}".format(int(n))
