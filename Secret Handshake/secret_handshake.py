@@ -7,7 +7,7 @@ def commands(binary_str):
             msg.append(secret[i-1])
 
     if binary_str[0] == '1':
-        msg = msg.reverse
+        msg.reverse
 
     return msg
 
