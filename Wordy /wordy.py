@@ -18,4 +18,4 @@ def answer(question):
     else:
         raise ValueError("syntax error")
 
-print(answer("What is 5?"))
+print(answer("What is 1 plus?"))
