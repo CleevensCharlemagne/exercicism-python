@@ -24,6 +24,7 @@ def is_valid(isbn):
         test += isbn_digits[i]*b
         b -= 1
 
+    #testing if the input is valid
     if test % 11 == 0:
         is_valid = True
 
