@@ -1,14 +1,14 @@
 def answer(question):
     words = question.split(" ")
-    print(words)
 
     if '?' in words[-1]:
         words[-1] = words[-1][:-1]
 
-    print(words)
-    if words[0] == 'what' and words[1] == 'is':
-        pass
+    if words[0] == 'What' and words[1] == 'is':
+        if len(words) == 3:
+            if words[-1].isdigit():
+                return int(words[-1])
     else:
         raise ValueError("syntax error")
 
-answer("What is 5?")
+print(answer("What is 5?"))
