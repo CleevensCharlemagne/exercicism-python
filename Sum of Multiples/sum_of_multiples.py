@@ -1,5 +1,5 @@
 def sum_of_multiples(limit, multiples):
-    l = set()
+    mySet = set()
     output = 0
     for n in multiples:
       if n == 0:
@@ -7,9 +7,9 @@ def sum_of_multiples(limit, multiples):
       for i in range(limit):
         if i > 0:
           if i % n == 0:
-            l.add(i)
+            mySet.add(i)
 
-    for el in l:
+    for el in mySet:
       output += el
 
     return output
