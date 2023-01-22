@@ -6,6 +6,9 @@ def commands(binary_str):
         if binary_str[i] == '1':
             msg.append(secret[i-1])
 
+    if binary_str[0] == '1':
+        msg = msg.reverse
 
+    return msg
 
 
