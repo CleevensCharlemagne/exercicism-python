@@ -11,8 +11,12 @@ def answer(question):
             if words[-1].isdigit():
                 return int(words[-1])
 
-        if len(words) == 4:
+        elif len(words) == 4:
             raise ValueError("unknown operation")
+
+        elif len(words) < 3:
+            raise ValueError("syntax error")
+
 
 
     else:
