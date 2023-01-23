@@ -3,6 +3,12 @@ def equilateral(sides):
     b = sides[1]
     c = sides[2]
 
+    if isTriangle(a, b, c):
+        if a == b and a == c:
+            return True
+
+    return False
+
 def isosceles(sides):
     pass
 
