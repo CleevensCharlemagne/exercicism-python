@@ -22,7 +22,7 @@ def isosceles(sides):
 
     return False
 
-
+#Scalene
 def scalene(sides):
     a = sides[0]
     b = sides[1]
