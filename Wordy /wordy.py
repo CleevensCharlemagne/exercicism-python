@@ -1,11 +1,18 @@
 def answer(question):
     words = question.split(" ")
+    digit = False
 
     #Removing the question mark
     if '?' in words[-1]:
         words[-1] = words[-1][:-1]
 
+    for c in question:
+        if c.isdigit():
+            digit = True
 
+    if digit == False:
+        raise ValueError("unknown operation")
+        return
 
     if not question[-1].isdigit():
         raise ValueError("syntax error")
