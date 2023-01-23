@@ -10,6 +10,7 @@ def equilateral(sides):
 
     return False
 
+#Isosceles
 def isosceles(sides):
     a = sides[0]
     b = sides[1]
