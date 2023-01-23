@@ -6,6 +6,14 @@ def answer(question):
     if '?' in words[-1]:
         words[-1] = words[-1][:-1]
 
+    if len(words) == 4:
+        raise ValueError("unknown operation")
+        return
+
+    if len(words) < 3:
+        raise ValueError("syntax error")
+        return
+
     for c in question:
         if c.isdigit():
             digit = True
@@ -18,8 +26,6 @@ def answer(question):
         raise ValueError("syntax error")
         return
 
-    elif len(words) == 4:
-        raise ValueError("unknown operation")
 
 
     #Checking the beginning of the question
