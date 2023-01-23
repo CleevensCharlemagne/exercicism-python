@@ -14,7 +14,11 @@ def answer(question):
         raise ValueError("syntax error")
         return
 
-    for c in question:
+    if "plus plus" in question:
+        raise ValueError("syntax error")
+        return
+
+    for c in words:
         if c.isdigit():
             digit = True
 
