@@ -5,6 +5,13 @@ def answer(question):
     if '?' in words[-1]:
         words[-1] = words[-1][:-1]
 
+
+
+    if not question[-1].isdigit():
+        raise ValueError("syntax error")
+        return
+
+
     #Checking the beginning of the question
     if words[0] == 'What' and words[1] == 'is':
         if len(words) == 3:
