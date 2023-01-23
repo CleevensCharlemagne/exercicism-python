@@ -1,3 +1,4 @@
+#Equilateral
 def equilateral(sides):
     a = sides[0]
     b = sides[1]
