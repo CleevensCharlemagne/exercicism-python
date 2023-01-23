@@ -32,7 +32,7 @@ def scalene(sides):
 
     return False
 
-
+#Verify if the given array is a valid triangle
 def isTriangle(a, b, c):
     if a + b + c == 0:
         return False
