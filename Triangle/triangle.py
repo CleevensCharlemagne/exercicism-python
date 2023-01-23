@@ -14,10 +14,9 @@ def isosceles(sides):
     b = sides[1]
     c = sides[2]
 
-    if not equilateral(sides):
-        if isTriangle(a, b, c):
-            if a == b or a == c or b == c:
-                return True
+    if isTriangle(a, b, c):
+        if a == b or a == c or b == c:
+            return True
 
     return False
 
