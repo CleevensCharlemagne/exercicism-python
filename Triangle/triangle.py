@@ -34,7 +34,7 @@ def scalene(sides):
 
 
 def isTriangle(a, b, c):
-    if a + b >= c or b + c >= a or a + c >= b:
+    if a + b >= c and b + c >= a and a + c >= b:
         return True
 
     return False
