@@ -30,6 +30,9 @@ def answer(question):
         raise ValueError("syntax error")
         return
 
+    if words[-1]. isdigit() and words[-2].isdigit():
+        raise ValueError("syntax error")
+        return
 
 
     #Checking the beginning of the question
