@@ -66,7 +66,14 @@ def foldl(function, list, initial):
 
 
 def foldr(function, list, initial):
-    pass
+    output = 0
+    if len(list) == 0:
+        return initial
+
+    for item in list:
+        output = function(item, output)
+
+    return output + initial
 
 
 def reverse(list):
