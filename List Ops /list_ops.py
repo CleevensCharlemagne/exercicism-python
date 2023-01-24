@@ -1,5 +1,8 @@
 def append(list1, list2):
-    pass
+    for l in list2:
+        list1.append(l)
+
+    return list1
 
 
 def concat(lists):
