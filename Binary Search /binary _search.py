@@ -1,2 +1,5 @@
 def find(search_list, value):
-    pass
+    if value not in list:
+        raise ValueError("value not in array")
+    else:
+        pass
