@@ -55,7 +55,10 @@ def map(function, lst):
 
 
 def foldl(function, list, initial):
-    pass
+    if len(list) == 0:
+        return initial
+
+    return sum(list) + initial
 
 
 def foldr(function, list, initial):
