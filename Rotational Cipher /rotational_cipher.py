@@ -1,11 +1,16 @@
 def rotate(text, key):
     plain = 'abcdefghijklmnopqrstuvwxyz'
-    cipher = text[key:] + text[:key]
+    cipher = plain[key:] + plain[:key]
     output = ''
 
     for n in text:
-        output += cipher[plain.index(n)]
+        if n in plain:
+            output += cipher[plain.index(n)]
+        else:
+            output += n
+
+    print(cipher)
 
     return output
 
-print()
+print(rotate('The quick brown fox jumps over the lazy dog.', 13))
