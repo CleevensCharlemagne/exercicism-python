@@ -19,7 +19,11 @@ def concat(lists):
 
 
 def filter(function, list):
-    pass
+    output = []
+
+    if len(output) == 0:
+        return []
+
 
 
 def length(list):
