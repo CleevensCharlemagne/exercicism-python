@@ -1,2 +1,3 @@
 def rotate(text, key):
-    pass
+    plain = 'abcdefghijklmnopqrstuvwxyz'
+
