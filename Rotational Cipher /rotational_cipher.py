@@ -3,11 +3,11 @@ def rotate(text, key):
     cipher = plain[key:] + plain[:key]
     output = ''
 
-    for n in text:
-        if n in plain:
-            output += cipher[plain.index(n)]
+    for i in range(len(text)):
+        if text[i] in plain:
+            output += cipher[plain.index(text[i])]
         else:
-            output += n
+            output += text[i]
 
     print(cipher)
 
