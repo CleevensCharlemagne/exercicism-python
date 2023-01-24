@@ -24,6 +24,11 @@ def filter(function, list):
     if len(output) == 0:
         return []
 
+    for n in list:
+        if function(n):
+            output.append(n)
+
+    return output
 
 
 def length(list):
