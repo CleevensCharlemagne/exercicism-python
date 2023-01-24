@@ -31,11 +31,19 @@ def filter(function, lst):
     return output
 
 
-def length(list):
-    pass
+def length(lst):
+    count = 0
+
+    if len(lst) == 0
+        return count
+
+    for n in lst:
+        count += 1
+
+    return count
 
 
-def map(function, list):
+def map(function, lst):
     pass
 
 
