@@ -6,7 +6,10 @@ def append(list1, list2):
 
 
 def concat(lists):
-    pass
+    flatten = []
+
+    if len(lists) == 0:
+        return []
 
 
 def filter(function, list):
