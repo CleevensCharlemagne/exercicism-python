@@ -1,11 +1,16 @@
-def rotate(text, key):
+def rotate(str, key):
+    text = str.lower()
     plain = 'abcdefghijklmnopqrstuvwxyz'
     cipher = plain[key:] + plain[:key]
     output = ''
 
     for i in range(len(text)):
         if text[i] in plain:
-            output += cipher[plain.index(text[i])]
+            t = cipher[plain.index(text[i])]
+            if str[i].isupper():
+                t = t.upper()
+            output += t
+
         else:
             output += text[i]
 
