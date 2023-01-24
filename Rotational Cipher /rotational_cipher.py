@@ -1,3 +1,8 @@
 def rotate(text, key):
     plain = 'abcdefghijklmnopqrstuvwxyz'
-    cipher = []
+    cipher = text[:key]
+    print(cipher)
+
+rotate("abcdefghijklmnopqrstuvwxyz", 13)
+
+
