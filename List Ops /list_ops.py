@@ -11,6 +11,12 @@ def concat(lists):
     if len(lists) == 0:
         return []
 
+    for sub in lists:
+        for li in sub:
+            flatten.append(li)
+
+    return flatten
+
 
 def filter(function, list):
     pass
