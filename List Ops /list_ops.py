@@ -18,13 +18,13 @@ def concat(lists):
     return flatten
 
 
-def filter(function, list):
+def filter(function, lst):
     output = []
 
-    if len(output) == 0:
+    if len(lst) == 0:
         return []
 
-    for n in list:
+    for n in lst:
         if function(n):
             output.append(n)
 
