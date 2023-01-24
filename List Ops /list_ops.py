@@ -34,7 +34,7 @@ def filter(function, lst):
 def length(lst):
     count = 0
 
-    if len(lst) == 0
+    if len(lst) == 0:
         return count
 
     for n in lst:
@@ -44,7 +44,14 @@ def length(lst):
 
 
 def map(function, lst):
-    pass
+    output = []
+    if len(lst) == 0:
+        return output
+
+    for item in lst:
+        output.append(function(item))
+
+    return output
 
 
 def foldl(function, list, initial):
