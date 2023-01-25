@@ -16,7 +16,7 @@ def translate(text):
             else:
                 break
 
-        output = text[i+1:] + cons + 'ay'
+        output = text[i:] + cons + 'ay'
         return output
 
 
