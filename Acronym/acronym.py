@@ -2,7 +2,7 @@ def abbreviate(words):
     output = ''
     str = ''
     for n in words:
-        if n == '-':
+        if n == '-' or n == '_':
             str += ' '
         else:
             str += n
