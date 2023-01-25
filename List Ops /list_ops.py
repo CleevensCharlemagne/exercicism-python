@@ -81,7 +81,7 @@ def reverse(lst):
     if len(lst) == 0:
         return []
 
-    i = len(lst -1)
+    i = len(lst) - 1
     while i >= 0:
         output.append(lst[i])
         i -= 1
