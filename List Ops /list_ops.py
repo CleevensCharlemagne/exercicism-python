@@ -80,10 +80,10 @@ def foldr(function, lst, initial):
 
     if isinstance(initial, str):
         res = ''
-        for i in range(len(lst) -2, 0):
+        for i in range(len(lst) -1, 0):
             res += output[i]
 
-        return output + initial
+        return res + initial
 
     return output + initial
 
