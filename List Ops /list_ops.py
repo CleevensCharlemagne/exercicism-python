@@ -77,4 +77,6 @@ def foldr(function, list, initial):
 
 
 def reverse(list):
-    pass
+    output = []
+    if len(list) == 0:
+        return output
