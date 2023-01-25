@@ -1,2 +1,9 @@
 def abbreviate(words):
-    pass
+    output = ''
+    str = ''
+    for n in words:
+        if n == '-':
+            str += ' '
+        str += n
+
+
