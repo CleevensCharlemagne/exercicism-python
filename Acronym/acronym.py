@@ -4,7 +4,8 @@ def abbreviate(words):
     for n in words:
         if n == '-':
             str += ' '
-        str += n
+        else:
+            str += n
 
     arr = str.split()
 
@@ -12,5 +13,3 @@ def abbreviate(words):
         output += n[0].upper()
 
     return output
-
-
