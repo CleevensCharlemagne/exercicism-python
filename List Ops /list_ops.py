@@ -71,6 +71,7 @@ def foldr(function, lst, initial):
 
     if isinstance(initial, str):
         output = ''
+        isstr = True
 
     if len(lst) == 0:
         return initial
@@ -78,10 +79,12 @@ def foldr(function, lst, initial):
     for item in lst:
         output = function(item, output)
 
-    if isinstance(initial, str):
+    if isstr:
         res = ''
-        for i in range(len(lst) -1, 0):
+        i = len(lst) - 1
+        while i >= 0:
             res += output[i]
+            i -= 1
 
         return res + initial
 
@@ -99,5 +102,3 @@ def reverse(lst):
         i -= 1
 
     return output
-
-
