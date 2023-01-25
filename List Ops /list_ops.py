@@ -80,3 +80,8 @@ def reverse(list):
     output = []
     if len(list) == 0:
         return output
+
+    for i in range(len(list) - 1, 0):
+        output.append(list[i])
+
+    return output
