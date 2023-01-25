@@ -76,12 +76,15 @@ def foldr(function, list, initial):
     return output + initial
 
 
-def reverse(list):
+def reverse(lst):
     output = []
-    if len(list) == 0:
-        return output
+    if len(lst) == 0:
+        print('yes')
+        return []
 
-    for i in range(len(list) - 1, 0):
-        output.append(list[i])
 
-    return output
+    lst.reverse()
+
+    return lst
+
+print(reverse([1, 3, 5, 7]))
