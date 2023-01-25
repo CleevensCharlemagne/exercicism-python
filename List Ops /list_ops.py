@@ -67,6 +67,9 @@ def foldl(function, list, initial):
 
 def foldr(function, list, initial):
     output = 0
+    if isinstance(initial, str):
+        output = ''
+
     if len(list) == 0:
         return initial
 
