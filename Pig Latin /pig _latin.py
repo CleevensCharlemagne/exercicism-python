@@ -6,7 +6,7 @@ def translate(text):
         output = text + 'ay'
         return output
 
-    if text[:2] == 'qu':
+    if text[:2] == 'qu' or text[1:3] == 'qu':
         output = text[2:] + 'quay'
         return output
 
