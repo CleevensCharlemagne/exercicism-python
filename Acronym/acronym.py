@@ -6,4 +6,11 @@ def abbreviate(words):
             str += ' '
         str += n
 
+    arr = str.split()
+
+    for n in arr:
+        output += n[0].upper()
+
+    return output
+
 
