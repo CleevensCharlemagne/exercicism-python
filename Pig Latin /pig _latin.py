@@ -6,6 +6,10 @@ def translate(text):
         output = text + 'ay'
         return output
 
+    if text[:3] == 'qu':
+        output = text[3:] + 'quay'
+        return output
+
     if text[0] not in vowels:
         cons = ''
         index = 0
