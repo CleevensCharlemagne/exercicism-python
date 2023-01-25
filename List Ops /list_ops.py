@@ -79,6 +79,13 @@ def foldr(function, list, initial):
     for item in list:
         output = function(item, output)
 
+    if isstr:
+        temp = ''
+        for i in range(len(output) -1, 0):
+            temp += output[i]
+
+        output = temp
+
     return output + initial
 
 
