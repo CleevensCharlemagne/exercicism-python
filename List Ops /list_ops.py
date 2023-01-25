@@ -65,26 +65,25 @@ def foldl(function, list, initial):
     return output + initial
 
 
-def foldr(function, list, initial):
+def foldr(function, lst, initial):
     output = 0
     isstr = False
 
     if isinstance(initial, str):
         output = ''
-        isstr = True
 
-    if len(list) == 0:
+    if len(lst) == 0:
         return initial
 
-    for item in list:
+    for item in lst:
         output = function(item, output)
 
-    if isstr:
-        temp = ''
-        for i in range(len(output) -1, 0):
-            temp += output[i]
+    if isinstance(initial, str):
+        res = ''
+        for i in range(len(lst) -2, 0):
+            res += output[i]
 
-        output = temp
+        return output + initial
 
     return output + initial
 
@@ -101,4 +100,4 @@ def reverse(lst):
 
     return output
 
-print(reverse([1,2,3,4,5]))
+
