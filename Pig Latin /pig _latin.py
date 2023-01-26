@@ -17,7 +17,7 @@ def translate(text):
         output = text[3:] + 'squay'
         return output
 
-    # testing if the first
+    # testing if the first character of the text
     if text[0] not in vowels:
         cons = ''
         index = 0
