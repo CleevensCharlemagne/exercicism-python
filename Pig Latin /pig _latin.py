@@ -12,6 +12,7 @@ def translate(text):
         output = text[2:] + 'quay'
         return output
 
+    # test if text
     elif text[1:3] == 'qu':
         output = text[3:] + 'squay'
         return output
