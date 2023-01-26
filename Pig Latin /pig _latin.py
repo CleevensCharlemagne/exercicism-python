@@ -7,7 +7,7 @@ def translate(text):
         output = text + 'ay'
         return output
 
-    # test if text
+    # test if text starts by qy
     if text[:2] == 'qu':
         output = text[2:] + 'quay'
         return output
