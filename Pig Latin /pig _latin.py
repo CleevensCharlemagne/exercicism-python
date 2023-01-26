@@ -6,11 +6,6 @@ def translate(text):
         output = text + 'ay'
         return output
 
-    # if 'y' in text:
-    #     if text[0] != 'y' and text[-1] != 'y':
-    #         output = text[:text.index('y')] + "may"
-    #         return output
-
     if text[:2] == 'qu':
         output = text[2:] + 'quay'
         return output
