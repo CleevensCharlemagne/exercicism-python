@@ -29,7 +29,7 @@ def translate(text):
             if text[0] != 'y' and text[-1] != 'y':
                 return text[text.index('y'):] + text[:text.index('y')] + 'may'
 
-            if text[0] == 'y':
+            if text[0] == 'y' or text[-1]:
                 return text + 'ay'
 
         for i in range(len(text)):
