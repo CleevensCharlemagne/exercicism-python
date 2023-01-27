@@ -27,8 +27,7 @@ def translate(text):
                 return text[1] + text[0] + 'may'
 
             if text[0] != 'y' and text[-1] != 'y':
-                return text[text.index('y'):] + text[:text.index('y')] + 'may'
-
+                pass
 
         for i in range(len(text)):
             if text[i] not in vowels:
