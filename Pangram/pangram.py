@@ -4,6 +4,7 @@ def is_pangram(sentence):
 
     # Loop through the letters
     for letter in letters:
+        #Check if the letter is in the sequence
         if letter not in sentence.lower():
             return False
 
