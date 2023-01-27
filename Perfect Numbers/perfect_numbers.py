@@ -6,6 +6,7 @@ def n_factors(number):
             factors.append(i)
     return factors
 
+# sum the all factors
 def sum_factors(factors):
     sum = 0
     for factor in factors:
