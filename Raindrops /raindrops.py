@@ -1,4 +1,5 @@
 def convert(number):
+    # the diffrent classifications
     pling = 'Pling'
     plang = 'Plang'
     plong = 'Plong'
