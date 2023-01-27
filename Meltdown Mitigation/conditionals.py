@@ -73,6 +73,8 @@ def fail_safe(temperature, neutrons_produced_per_second, threshold):
 
     # perfrm the multiplication
     mult = temperature * neutrons_produced_per_second
+
+    #Checking the level
     if (mult < percentageOfThreshold(threshold, 90)):
         return 'LOW'
     elif(mult <=  percentageOfThreshold(threshold, 110)):
