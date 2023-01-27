@@ -22,10 +22,6 @@ def translate(text):
         cons = ''
         index = 0
 
-        if 'y' in text:
-            if len(text) == 2 and text[1] == 'y':
-                return text[1] + text[0] + 'may'
-
         for i in range(len(text)):
             if text[i] not in vowels:
                 cons += text[i]
