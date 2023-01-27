@@ -21,6 +21,11 @@ def translate(text):
     if text[0] not in vowels:
         cons = ''
         index = 0
+
+        if 'y' in text:
+            if len(text) == 2 and text[1] == 'y':
+                return text[1] + text[0] + 'may'
+
         for i in range(len(text)):
             if text[i] not in vowels:
                 cons += text[i]
@@ -30,7 +35,4 @@ def translate(text):
 
         output = text[i:] + cons + 'ay'
         return output
-
-
-
 
