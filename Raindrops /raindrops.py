@@ -5,6 +5,7 @@ def convert(number):
     plong = 'Plong'
     output = ''
 
+    # Classification
     if number % 3 == 0:
         output = pling
 
