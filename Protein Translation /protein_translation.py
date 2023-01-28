@@ -1,5 +1,6 @@
 def proteins(strand):
     proteins = list()
+    codons = list()
     match = {'AUG':'Methionine', 'UUU':'Phenylalanine', 'UUC':'Phenylalanine',
              'UUA':'Leucine', 'UUG':'Leucine', 'UCU':'Serine', 'UCC':'Serine',
              'UCA':'Serine', 'UCG':'Serine', 'UAU':'Tyrosine', 'UAC':'Tyrosine',
@@ -10,6 +11,9 @@ def proteins(strand):
         if i % 3 == 0 and i != 0:
             proteins.append(strand[i-3:i])
 
-    print(proteins)
+    for protein in proteins:
+        codons.append(match[protein])
+
+    print(codons)
 
 proteins("AUGUUUUCUUAAAUG")
