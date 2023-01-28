@@ -12,6 +12,8 @@ def proteins(strand):
             proteins.append(strand[i-3:i])
 
     for protein in proteins:
+        if match[protein] == 'STOP':
+            break
         codons.append(match[protein])
 
     print(codons)
