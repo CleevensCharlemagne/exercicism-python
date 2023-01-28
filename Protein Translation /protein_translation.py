@@ -3,4 +3,4 @@ def proteins(strand):
              'UUA':'Leucine', 'UUG':'Leucine', 'UCU':'Serine', 'UCC':'Serine',
              'UCA':'Serine', 'UCG':'Serine', 'UAU':'Tyrosine', 'UAC':'Tyrosine',
              'UGU':'Cysteine', 'UGC':'Cysteine', 'UGG':'Tryptophan', 'UAA':'STOP',
-             'UAG':'STOP'}
+             'UAG':'STOP', 'UGA':'STOP'}
