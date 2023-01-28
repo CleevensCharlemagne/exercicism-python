@@ -6,7 +6,7 @@ def proteins(strand):
              'UGU':'Cysteine', 'UGC':'Cysteine', 'UGG':'Tryptophan', 'UAA':'STOP',
              'UAG':'STOP', 'UGA':'STOP'}
 
-    for i in range(len(strand)+1):
+    for i in range(len(strand) + 1):
         if i % 3 == 0 and i != 0:
             proteins.append(strand[i-3:i])
 
