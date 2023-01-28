@@ -16,6 +16,4 @@ def proteins(strand):
             break
         codons.append(match[protein])
 
-    print(codons)
-
-proteins("AUGUUUUCUUAAAUG")
+    return codons
