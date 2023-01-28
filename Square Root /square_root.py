@@ -1,2 +1,3 @@
 def square_root(number):
-    pass
+    squreRoot = 1 / 2
+
