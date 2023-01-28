@@ -1,2 +1,2 @@
 def proteins(strand):
-    pass
+    match = {'AUG':'Methionine', 'UUU':'Phenylalanine', 'UUC':'Phenylalanine', 'UUA':'Leucine'}
