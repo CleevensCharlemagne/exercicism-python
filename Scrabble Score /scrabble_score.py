@@ -6,7 +6,7 @@ def score(word):
     score = 0
 
     for letter in word:
-        if letter.upper() in letterValues.values():
+        if letter.upper() in letterValues.keys():
             score += letterValues[letter.upper()]
 
     return score
