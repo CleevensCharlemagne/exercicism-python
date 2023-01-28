@@ -4,3 +4,6 @@ def proteins(strand):
              'UCA':'Serine', 'UCG':'Serine', 'UAU':'Tyrosine', 'UAC':'Tyrosine',
              'UGU':'Cysteine', 'UGC':'Cysteine', 'UGG':'Tryptophan', 'UAA':'STOP',
              'UAG':'STOP', 'UGA':'STOP'}
+
+    for i in range(2 , len(strand), 3):
+        print(strand[i-2:i])
