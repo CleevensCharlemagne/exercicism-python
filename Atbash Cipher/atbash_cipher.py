@@ -4,6 +4,7 @@ def encode(plain_text):
 
     plain_text = plain_text.lower()
     word = ''
+    output = ''
 
     for
 
