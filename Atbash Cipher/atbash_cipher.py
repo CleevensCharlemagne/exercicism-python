@@ -15,6 +15,11 @@ def encode(plain_text):
         if len(output) == 5:
             output += ' '
 
+    if output[-1] == ' ':
+        output = output[:-1]
+
+
+
 def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
     cipher = 'zyxwvutsrqponmlkjihgfedcba'
