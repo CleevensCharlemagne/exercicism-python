@@ -11,6 +11,8 @@ def decode(ciphered_text):
         l = l.lower()
         if l in plain:
             output += plain[cipher.index(l)]
-        el
+        elif l != ' ':
+            continue
+
 
     return output
