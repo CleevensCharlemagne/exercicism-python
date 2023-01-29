@@ -18,7 +18,7 @@ def encode(plain_text):
     if output[-1] == ' ':
         output = output[:-1]
 
-
+    return output
 
 def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
