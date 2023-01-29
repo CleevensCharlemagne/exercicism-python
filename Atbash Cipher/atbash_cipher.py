@@ -9,4 +9,6 @@ def decode(ciphered_text):
 
     for l in ciphered_text:
         if l in plain:
-            output += plain[]
+            output += plain[cipher.index(l)]
+
+    return output
