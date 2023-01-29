@@ -7,5 +7,5 @@ def decode(ciphered_text):
     output = ''
 
     for l in ciphered_text:
-        if l != ' ':
-            output +=
+        if l in plain:
+            output += plain[]
