@@ -14,7 +14,7 @@ def encode(plain_text):
         l = l.lower()
         if l in plain:
             output += plain[cipher.index(l)]
-        elif l != ' ':
+        elif l != ' ' and l not in punc:
             output += l
 
         i += 1
