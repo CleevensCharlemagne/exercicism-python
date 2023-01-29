@@ -17,6 +17,7 @@ def encode(plain_text):
 
         if i == 5:
             output += ' '
+            i = 0
 
     if output[-1] == ' ':
         output = output[:-1]
