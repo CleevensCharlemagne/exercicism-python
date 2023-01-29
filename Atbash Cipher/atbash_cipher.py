@@ -5,8 +5,10 @@ def encode(plain_text):
     plain_text = plain_text.lower()
     word = ''
     output = ''
+    counter = 0
 
-    for
+    for l in plain_text:
+
 
 
 def decode(ciphered_text):
