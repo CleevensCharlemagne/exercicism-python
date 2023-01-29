@@ -8,7 +8,8 @@ def decode(ciphered_text):
     output = ''
 
     for l in ciphered_text:
-        if l in plain:
+        if l.lower() in plain:
             output += plain[cipher.index(l)]
+        el
 
     return output
