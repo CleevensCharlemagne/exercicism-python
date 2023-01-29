@@ -1,6 +1,10 @@
+import string
+
+
 def encode(plain_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
     cipher = 'zyxwvutsrqponmlkjihgfedcba'
+    punc = string.punctuation
 
     plain_text = plain_text.lower()
     output = ''
