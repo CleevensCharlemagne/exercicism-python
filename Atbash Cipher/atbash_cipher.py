@@ -4,6 +4,7 @@ def encode(plain_text):
 
     plain_text = plain_text.lower()
     output = ''
+    i = 0
 
     for l in plain_text:
         l = l.lower()
@@ -12,7 +13,9 @@ def encode(plain_text):
         elif l != ' ':
             output += l
 
-        if len(output) == 5:
+        i += 1
+
+        if i == 5:
             output += ' '
 
     if output[-1] == ' ':
