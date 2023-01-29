@@ -3,7 +3,9 @@ def encode(plain_text):
     cipher = 'zyxwvutsrqponmlkjihgfedcba'
 
     plain_text = plain_text.lower()
+    word = ''
 
+    for
 
 
 def decode(ciphered_text):
