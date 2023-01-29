@@ -14,6 +14,9 @@ def encode(plain_text):
         elif l != ' ':
             output += l
 
+        if len(output) == 5:
+            output += ' '
+
 def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
     cipher = 'zyxwvutsrqponmlkjihgfedcba'
