@@ -1,5 +1,5 @@
 def encode(plain_text):
-    pass
+    cypher = 'zyxwvutsrqponmlkjihgfedcba'
 
 
 def decode(ciphered_text):
