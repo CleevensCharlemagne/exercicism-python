@@ -14,10 +14,10 @@ def encode(plain_text):
         l = l.lower()
         if l in plain:
             output += plain[cipher.index(l)]
+            i += 1
         elif l != ' ' and l not in punc:
             output += l
-
-        i += 1
+            i += 1
 
         if i == 5:
             output += ' '
