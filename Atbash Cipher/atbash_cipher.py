@@ -6,6 +6,6 @@ def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
     output = ''
 
-    for l in ciphered_text:
-        if l != ' ':
-
+    for i in range(len(ciphered_text)):
+        if i != ' ':
+            output +=
