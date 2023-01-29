@@ -3,4 +3,4 @@ def encode(plain_text):
 
 
 def decode(ciphered_text):
-    pass
+    plain = 'abcdefghijklmnopqrstuvwxyz'
