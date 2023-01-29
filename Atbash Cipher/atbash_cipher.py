@@ -1,4 +1,5 @@
 def encode(plain_text):
+    plain = 'abcdefghijklmnopqrstuvwxyz'
     cipher = 'zyxwvutsrqponmlkjihgfedcba'
 
 
