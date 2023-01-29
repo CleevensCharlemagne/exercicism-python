@@ -8,8 +8,11 @@ def encode(plain_text):
     counter = 0
 
     for l in plain_text:
-
-
+        l = l.lower()
+        if l in plain:
+            output += plain[cipher.index(l)]
+        elif l != ' ':
+            output += l
 
 def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
