@@ -4,6 +4,7 @@ def encode(plain_text):
 
 def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
+    cipher = 'zyxwvutsrqponmlkjihgfedcba'
     output = ''
 
     for l in ciphered_text:
