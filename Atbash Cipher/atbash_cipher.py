@@ -2,6 +2,9 @@ def encode(plain_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
     cipher = 'zyxwvutsrqponmlkjihgfedcba'
 
+    plain_text = plain_text.lower()
+
+
 
 def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
