@@ -9,6 +9,8 @@ def label(colors):
 
     if len(res) > 3 and len(res) < 5:
         res = str(int(int(res) / 1000)) + ' kiloohms'
+    elif len(res) >= 5 and len(res) < 8:
+        res = str(int(int(res) / 1000000)) + ' megaohms'
     else:
         res += ' ohms'
     return res
