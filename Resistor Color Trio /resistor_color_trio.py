@@ -7,9 +7,9 @@ def label(colors):
     if colorsValue[colors[2]] > 0:
         res += '0'*colorsValue[colors[2]]
 
-    if len(res) > 3 and len(res) < 5:
+    if len(res) > 3 and len(res) < 6:
         res = str(int(int(res) / 1000)) + ' kiloohms'
-    elif len(res) >= 5 and len(res) < 8:
+    elif len(res) >= 6 and len(res) < 8:
         res = str(int(int(res) / 1000000)) + ' megaohms'
     elif len(res) >= 8:
         res = str(int(int(res) / 1000000000)) + ' gigaohms'
