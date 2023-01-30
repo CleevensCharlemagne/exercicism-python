@@ -3,7 +3,8 @@ def label(colors):
                    'green': 5, 'blue': 6, 'violet': 7, 'grey': 8, 'white': 9}
 
     res = f'{str(colorsValue[colors[0]])}{str(colorsValue[colors[1]])}'
-    if colorsValue[]
+    if colorsValue[colors[2]] > 0:
+        res += f'{10**str(colorsValue[colors[2]])}'
     print(res)
 
-label(['orange'])
+label(['orange', 'orange', 'orange'])
