@@ -1,6 +1,5 @@
-
-
-Black: 0
+def label(colors):
+    colorsValue = {'black': 0}
 
 Brown: 1
 
