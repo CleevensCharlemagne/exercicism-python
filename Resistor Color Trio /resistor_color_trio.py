@@ -3,10 +3,11 @@ def label(colors):
                    'green': 5, 'blue': 6, 'violet': 7, 'grey': 8, 'white': 9}
 
     res = f'{str(colorsValue[colors[0]])}{str(colorsValue[colors[1]])}'
+    res = str(int(res))
     if colorsValue[colors[2]] > 0:
         res += '0'*colorsValue[colors[2]]
 
-    if len(res) > 3:
+    if len(res) > 3 and len(res) < 5:
         res = str(int(int(res) / 1000)) + ' kiloohms'
     else:
         res += ' ohms'
