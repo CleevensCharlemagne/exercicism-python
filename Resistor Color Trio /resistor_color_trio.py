@@ -6,5 +6,3 @@ def label(colors):
     if colorsValue[colors[2]] > 0:
         res += '0'*colorsValue[colors[2]]
     return res
-
-label(['orange', 'orange', 'orange'])
