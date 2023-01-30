@@ -4,7 +4,7 @@ def label(colors):
 
     res = f'{str(colorsValue[colors[0]])}{str(colorsValue[colors[1]])}'
     if colorsValue[colors[2]] > 0:
-        res += f'{10**str(colorsValue[colors[2]])}'
+        res += '0'*colorsValue[colors[2]]
     print(res)
 
 label(['orange', 'orange', 'orange'])
