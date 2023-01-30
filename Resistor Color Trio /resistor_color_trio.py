@@ -7,5 +7,7 @@ def label(colors):
         res += '0'*colorsValue[colors[2]]
 
     if len(res) > 3:
-        res = str(int(res) / 1000)
+        res = str(int(int(res) / 1000)) + ' kiloohms'
     return res
+
+print(label(["red", "black", "red"]))
