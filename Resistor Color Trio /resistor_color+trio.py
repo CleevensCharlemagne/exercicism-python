@@ -1,8 +1,4 @@
 def label(colors):
-    colorsValue = {'black': 0, 'brown': 1, 'red': 2, 'orange': 3, 'yellow': 4, 'green': 5, 'blue': 6, 'violet': 7}
-
-Violet: 7
-
-Grey: 8
+    colorsValue = {'black': 0, 'brown': 1, 'red': 2, 'orange': 3, 'yellow': 4, 'green': 5, 'blue': 6, 'violet': 7, 'grey': 8}
 
 White: 9
