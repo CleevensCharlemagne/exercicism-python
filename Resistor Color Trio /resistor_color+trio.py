@@ -1,11 +1,5 @@
 def label(colors):
-    colorsValue = {'black': 0, 'brown': 1, 'red': 2}
-
-Orange: 3
-
-Yellow: 4
-
-Green: 5
+    colorsValue = {'black': 0, 'brown': 1, 'red': 2, 'orange': 3, 'yellow': 4, 'green': 5}
 
 Blue: 6
 
