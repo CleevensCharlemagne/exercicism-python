@@ -7,14 +7,12 @@ def label(colors):
     if colorsValue[colors[2]] > 0:
         res += '0'*colorsValue[colors[2]]
 
-    if len(res) > 3 and len(res) < 6:
+    if len(res) > 3 and len(res) < 7:
         res = str(int(int(res) / 1000)) + ' kiloohms'
-    elif len(res) >= 6 and len(res) < 8:
+    elif len(res) >= 7 and len(res) < 8:
         res = str(int(int(res) / 1000000)) + ' megaohms'
     elif len(res) >= 8:
         res = str(int(int(res) / 1000000000)) + ' gigaohms'
     else:
         res += ' ohms'
     return res
-
-print(label(["red", "black", "red"]))
