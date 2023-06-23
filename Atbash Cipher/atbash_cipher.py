@@ -27,7 +27,7 @@ def encode(plain_text):
         output = output[:-1]
 
     return output
-
+#Decode method
 def decode(ciphered_text):
     plain = 'abcdefghijklmnopqrstuvwxyz'
     cipher = 'zyxwvutsrqponmlkjihgfedcba'
